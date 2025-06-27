@@ -5,6 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScryptu</title>
         <link rel="stylesheet" href="../css/geral.css"/>
+        <script>
+            let num1 = parseFloat(prompt("Digite o primeiro número:"));
+            let num2 = parseFloat(prompt("Digite o segundo número:"));
+            let operacao = prompt("Digite a operação (+, -, *, /):");
+
+            let resultado;
+
+            if(operacao === "+"){
+                resultado = num1 + num2;
+            }else if(operacao === "-"){
+                resultado = num1 - num2;
+            }else if(operacao === "*"){
+                resultado = num1 * num2;
+            }else if(operacao === "/"){
+                if(num2 === 0){
+                    alert("Impossível dividir por zero...");
+                }else{
+                    resultado = num1 / num2;
+                }
+            }else{
+                alert("Operação inválida");
+            }
+            alert(`Resultado: ${num1} ${operacao} ${num2} = ${resultado}`);
+        </script>
     </head>
     <body>
         <nav>
@@ -26,17 +50,5 @@
         <section class="pagina">
             
         </section>
-        <script>
-            let idade = parseInt(prompt('Digite tua idade'));
-            if(idade >= 18){
-                document.write(`Com ${idade} anos, é maior de idade`);
-            }else{
-                if(idade < 0){
-                    document.write(`Com ${idade} anos, não existe`);
-                }else{
-                    document.write(`Com ${idade} anos, é menor de idade`);
-                }
-            }
-        </script>
     </body>
 </html>

@@ -5,6 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScryptu</title>
         <link rel="stylesheet" href="../css/geral.css"/>
+        <script>
+            const numero=parseFloat(prompt("Digite um número:"));
+
+            if (numero>= 10 && numero <= 20) {
+                alert("O número está dentro do intervalo de 10 a 20");
+            } else {
+                alert("O número está fora do intervalo de 10 a 20");
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -26,17 +35,5 @@
         <section class="pagina">
             
         </section>
-        <script>
-            let idade = parseInt(prompt('Digite tua idade'));
-            if(idade >= 18){
-                document.write(`Com ${idade} anos, é maior de idade`);
-            }else{
-                if(idade < 0){
-                    document.write(`Com ${idade} anos, não existe`);
-                }else{
-                    document.write(`Com ${idade} anos, é menor de idade`);
-                }
-            }
-        </script>
     </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScryptu</title>
+        <link rel="stylesheet" href="../css/geral.css"/>
+        <script>
+            let mes = parseInt(prompt("Digite o número do mês (1 a 12):"));
+            let estacaoSul;
+            let estacaoNorte;
+            let mesNome;
+
+            if(mes==1){
+                estacaoSul = "Verão";
+                estacaoNorte = "Inverno";
+                mesNome = "Janeiro";
+            } else if(mes==2){
+                estacaoSul = "Verão";
+                estacaoNorte = "Inverno";
+                mesNome = "Fevereiro";
+            }else if(mes==3){
+                estacaoSul = "Outono";
+                estacaoNorte = "Primavera";
+                mesNome = "Março";
+            }else if(mes==4){
+                estacaoSul = "Outono";
+                estacaoNorte = "Primavera";
+                mesNome = "Abril";
+            }else if(mes==5){
+                estacaoSul = "Outono";
+                estacaoNorte = "Primavera";
+                mesNome = "Maio";
+            }else if(mes === 6){
+                estacaoSul="Inverno";
+                estacaoNorte = "Verão";
+                mesNome = "Junho";
+            }else if(mes==7){
+                estacaoSul = "Inverno";
+                estacaoNorte = "Verão";
+                mesNome = "Julho";
+            }else if(mes==8){
+                estacaoSul = "Inverno";
+                estacaoNorte = "Verão";
+                mesNome = "Agosto";
+            }else if(mes==9){
+                estacaoSul = "Primavera";
+                estacaoNorte = "Outono";
+                mesNome = "Setembro";
+            }else if(mes==10){
+                estacaoSul = "Primavera";
+                estacaoNorte = "Outono";
+                mesNome = "Outubro";
+            }else if(mes==11){
+                estacaoSul = "Primavera";
+                estacaoNorte = "Outono";
+                mesNome = "Novembro";
+            }else if(mes==12){
+                estacaoSul = "Verão";
+                estacaoNorte = "Inverno";
+                mesNome = "Dezembro";
+            }else{
+                estacaoSul = "Mês inválido";
+                estacaoNorte = "Mês inválido";
+            }
+
+            if (estacaoSul === "Mês inválido" || estacaoNorte === "Mês inválido") {
+                alert("Mês inválido");
+            }
+            alert(`${mesNome} é ${estacaoSul} no sul e ${estacaoNorte} no norte`);
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ol>
+                <li><a href="../index.html">↶ Retornar</a></li>
+                <li><a href="positivo-negativo.html">Positivo-Negativo</a></li>
+                <li><a href="idade.html">Idade</a></li>
+                <li><a href="par-impar.html">Par e Ímpar</a></li>
+                <li><a href="num-maior.html">Número Maior</a></li>
+                <li><a href="senha.html">Senha</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="triangulo.html">Triângulos</a></li>
+                <li><a href="ano-bissexto.html">Ano Bissexto</a></li>
+                <li><a href="nota.html">Nota</a></li>
+                <li><a href="estacao.html">Estação</a></li>
+                <li><a href="intervalo.html">Intervalo</a></li>
+            </ol>
+        </nav>
+        <section class="pagina">
+            
+        </section>
+    </body>
+</html>

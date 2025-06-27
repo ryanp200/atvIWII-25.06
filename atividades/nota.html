@@ -5,6 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScryptu</title>
         <link rel="stylesheet" href="../css/geral.css"/>
+        <script>
+            let nota = parseFloat(prompt("Digite a nota do aluno (0 a 100):"));
+            let conceito;
+            if (nota >= 90 && nota <= 100){
+                conceito = "A";
+            }else if(nota >= 80 && nota < 90){
+                conceito = "B";
+            }else if(nota >= 70 && nota < 80){
+                conceito = "C";
+            }else if(nota >= 60 && nota < 70){
+                conceito = "D";
+            }else if(nota >= 0 && nota < 60){
+                conceito = "F";
+            }else{
+                conceito = "Nota inválida";
+            }
+            alert(`Conceito: ${conceito}`);
+        </script>
     </head>
     <body>
         <nav>
@@ -26,17 +44,5 @@
         <section class="pagina">
             
         </section>
-        <script>
-            let idade = parseInt(prompt('Digite tua idade'));
-            if(idade >= 18){
-                document.write(`Com ${idade} anos, é maior de idade`);
-            }else{
-                if(idade < 0){
-                    document.write(`Com ${idade} anos, não existe`);
-                }else{
-                    document.write(`Com ${idade} anos, é menor de idade`);
-                }
-            }
-        </script>
     </body>
 </html>
